@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Toward Quantifying Visual Indeterminacy</title>
+    <meta property="og:image" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/files/teaser-02.jpg"/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+<!--    <meta name="twitter:site" content="@nytimesbits" />-->
+    <meta name="twitter:creator" content="@AaronHertzmann" />
+    <meta property="og:url" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/" />
+    <meta property="og:title" content="Toward Quantifying Visual Indeterminacy" />
+
+    <meta property="og:description" content="This paper presents a crowdsourced approach to measuring the perceptual ambiguity of a collection of artistic images." />
+    <meta property="og:image" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/files/teaser-02.jpg" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="./css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61168812-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Visual Indeterminacy</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#Abstract">Abstract</a></li>
+                <li class="active"><a href="#Paper">Paper</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+
+        <h2>Toward Quantifying Ambiguities in Artistic Images</h2>
+        <h5>TAP 2020</h5>
+        <div class="author">
+            <a href="http://cybertron.cg.tu-berlin.de/xiwang/"><font size="4">Xi Wang</font></a>
+            <small>TU Berlin & MIT</small>
+            <br>
+            <a href="https://research.adobe.com/person/zoya-bylinskii/"><font size="4">Zoya Bylinskii</font>,</a>
+            <small>Adobe Research</small>
+            <br>
+            <a href="http://www.dgp.toronto.edu/~hertzman/"><font size="4">Aaron Hertzmann</font></a>
+            <small>Adobe Research</small>
+            <br>
+            <a href="https://robertpepperell.com/"><font size="4">Robert Pepperell</font></a>
+            <small>Fovolab/Cardiff Metropolitan University</small>
+
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <br>
+    <br>
+
+<!--    <img src="./files/teaser-01.png" class="featurette-image img-responsive center-block" width=1000></img>-->
+    <img src="./files/teaser-02.jpg" class="featurette-image img-responsive center-block" width=1000></img>
+
+    <br>
+
+    <h3 class="featurette-heading", id="Abstract">Abstract</h3>
+        <p>
+            It has long been hypothesized that perceptual ambiguities play an important role in aesthetic experience:
+            a work with some ambiguity engages a viewer more than one that does not.
+            However, current frameworks for testing this theory are limited by the availability of stimuli and data collection methods.
+            This paper presents an approach to measuring the perceptual ambiguity of a collection of images.
+            Crowdworkers are asked to describe image content, after different viewing durations.
+            Experiments are performed using images created with Generative Adversarial Networks, using the Artbreeder website.
+            We show that text processing of viewer responses can provide a fine-grained way to measure and describe image ambiguities.
+        </p>
+    <br>
+    <hr>
+    <div>
+    <h3 class="featurette-heading", id="Paper">Paper</h3>
+    <a href="./files/Indeterminacy-tap.pdf"><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="./files/visual-indeterminacy-tap.png" width=250></a>
+<!--    <h5>-->
+        <p>
+            <br>
+            <br>
+            Xi Wang, Zoya Bylinskii, Aaron Hertzmann, and Robert Pepperell.
+            <br>
+            Toward Quantifying Ambiguities in Artistic Images.
+            <br>
+            ACM Trans. Appl. Percept. (September 2020), 10 pages.
+            <br>
+            <small>Special issue for ACM Symposium on Applied Perception (SAP) papers.</small>
+            <br>
+            <br>
+
+            <h5><a href="./files/Indeterminacy-tap.pdf">Paper</a></h5>
+        <!--            <h5>arXiv preprint <a href="">[paper]</a></h5>-->
+            <h5><a href="https://arxiv.org/abs/2008.09688">ArXiv preprint</a></h5>
+            <a href="./files/bib.txt">Bibtex</a>
+            <br>
+        <h5>Code: <a href="https://github.com/xiwang1212/visual-indeterminacy">GitHub</a></h5>
+<!--        <a href="">[GitHub]</a>-->
+        </p>
+<!--    </h5>-->
+    </div>
+
+    <br>
+    <hr>
+    <h3>Human Visual Perception of Art as Computation, talk by Aaron Hertzmann</h3>
+    <h5>See Aaron's talk on related topics. Details of this project starts from 17:45.</h5>
+    <div align="center" class="embed-responsive embed-responsive-16by9" >
+        <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/FxrwJFjGyP4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+    <hr>
+    <h3>Poster Presentation at VSS 2021</h3>
+    <h4><a href="./files/Toward-quantifying-ambiguities-in-artistic-images.pdf">Poster</a></h4>
+    <h4>Poster walk-through</h4>
+    <div align="center" class="embed-responsive embed-responsive-16by9" >
+        <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/fdv5to1-99E" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <hr>
+<!--    <img src="./files/artbreeder.png" width=300></img>-->
+    Link to <a href="https://artbreeder.com/"><img src="./files/artbreeder.png" width=300></img> </a>
+    <hr>
+
+    <div>
+        <h4>Acknowledgments</h4>
+
+        <p>
+            We thank Aude Oliva for feedback and support for this project and for hosting X.W. as a visiting student,
+            and Joel Simon for providing data from Artbreeder.
+            All stimuli are public domain imagery obtained from Artbreeder, created by the following users.
+            Figure 2: guidoheinze, kent4747; Figure 3: jakritger, caincaser, strangecircus;
+            Figure 4: desleep, jeffgiddens, thunderdog, angrytree607, portjos, strangecircus;
+            Figure 5: jakritger, happyemil, thelindamartinez06;
+            Figure 7: thunderdog, desleep, spihut, telmaroza.
+        </p>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

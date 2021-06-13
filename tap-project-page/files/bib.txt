@@ -1,0 +1,18 @@
+@article{,
+author = {Wang, Xi and Bylinskii, Zoya and Hertzmann, Aaron and Pepperell, Robert},
+title = {Towards Quantifying Ambiguities in Artistic Images},
+year = {2020},
+issue_date = {September 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {},
+number = {},
+issn = {},
+url = {},
+doi = {},
+journal = {ACM Trans. Appl. Percept.},
+month = sep,
+articleno = {},
+numpages = {},
+keywords = {}
+}
