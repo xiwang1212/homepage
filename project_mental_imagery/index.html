@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Mental Imagery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../project_saliency/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    <link href="../project_saliency/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="../project_saliency/ccs/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61168812-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mental Imagery</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!--             <li class="active"><a href="#">Home</a></li> -->
+                <li><a href="retrieval.html">Retrieval</a></li>
+                <li><a href="em.html">Elastic Matching</a></li>
+                <li><a href="similarity.html">Quantification</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Mental Imagery</h1>
+        <!--<div class="author">-->
+            <!--<div class="affiliation"><a href="http://www.cg.tu-berlin.de">Computer Graphics, TU Berlin</a></div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="container">
+
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading">The Mental Image Revealed by Gaze Tracking </h2>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            Humans involuntarily move their eyes when retrieving an image from memory. This motion is often similar to actually observing the image.
+            We suggest to exploit this behavior as a new modality in human computer interaction, using the motion of the eyes as a descriptor of the image.
+            Interaction requires the user's eyes to be tracked but no voluntary physical activity.
+            We perform a controlled experiment and develop matching techniques using machine learning to investigate if images can be discriminated based on the gaze patterns recorded while users merely think about image.
+            Our results indicate that image retrieval is possible with an accuracy significantly above chance.
+            We also show that this result generalizes to images not used during training of the classifier and extends to uncontrolled settings in a realistic scenario.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="../imgs/chi19.png" class="featurette-image img-responsive center-block"></img>
+        </div>
+    </div>
+    <br>
+    <p> Download File "The Mental Image Revealed by Gaze Tracking"<br/>
+        <a href="../files/papers/mi.pdf"><span style="text-transform: uppercase;">[pdf, 5.5 MB]</span></a>
+    </p>
+
+
+    <h2 class="lead">Reference</h2>
+    <p> Xi Wang, Andreas Ley, Sebastian Koch, David Lindlbauer, James Hays, Kenneth Holmqvist, and Marc Alexa. 2019. The Mental Image Revealed by Gaze Tracking. In CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4–9, 2019, Glasgow, Scotland UK. ACM, New York, NY, USA, 12 pages. https://doi.org/ 10.1145/3290605.3300839</p>
+
+    <div class="page-header">
+        <p><a class="btn btn-default" href="retrieval.html" role="button">View details &raquo;</a></p>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+
+<div class="container">
+
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading">Computational discrimination between natural images based on gaze during mental imagery </h2>
+
+    <div class="row featurette">
+        <div class="col-md-10">
+            When retrieving image from memory, humans usually move their eyes spontaneously as if the image were in front of them.
+            Such eye movements correlate strongly with the spatial layout of the recalled image content and function as memory cues facilitating the retrieval procedure.
+            However, how close the correlation is between imagery eye movements and the eye movements while looking at the original image is unclear so far.
+            In this work we first quantify the similarity of eye movements between recalling an image and encoding the same image,
+            followed by the investigation on whether comparing such pairs of eye movements can be used for computational image retrieval.
+            Our results show that computational image retrieval based on eye movements during spontaneous imagery is feasible.
+            Furthermore, we show that such a retrieval approach can be generalized to unseen images.
+            </p>
+        </div>
+        <div class="col-md-2">
+            <img src="../imgs/sr20.png" class="featurette-image img-responsive center-block"></img>
+        </div>
+    </div>
+    <br>
+    <p> Download File "Computational discrimination between natural images based on gaze during mental imagery"<br/>
+        <a href="https://www.nature.com/articles/s41598-020-69807-0"><span style="text-transform: uppercase;">[PDF]</span></a>
+    </p>
+
+
+    <h2 class="lead">Reference</h2>
+    <p> Wang, X., Ley, A., Koch, S. et al. Computational discrimination between natural images based on gaze during mental imagery.
+        Sci Rep 10, 13035 (2020). https://doi.org/10.1038/s41598-020-69807-0</p>
+
+    <div class="page-header">
+        <p><a class="btn btn-default" href="similarity.html" role="button">View details &raquo;</a></p>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+<div class="container">
+
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading">A consensus-based elastic matching algorithm for mapping recall fixations onto encoding fixations in the
+        looking-at-nothing paradigm </h2>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            We present an algorithmic method for aligning recall fixations with encoding fixations, to be used in
+            looking-at-nothing paradigms that either record recall eye movements during silence or want to speed up data
+            analysis with recordings of recall data during speech. The algorithm utilizes a novel consensus-based elastic
+            matching algorithm to estimate which encoding fixations correspond to later recall fixations.
+            This is not a scanpath comparison method, as fixation sequence order is ignored and only position configurations
+            are used. The algorithm has three internal parameters and is reasonable stable over a wide range of parameter
+            values. We then evaluate the performance of our algorithm by investigating whether the recalled objects
+            identified by the algorithm correspond with independent assessments of what objects in the image are marked as
+            subjectively important. Our results show that the mapped recall fixations align well with important regions of
+            the images. This result is exemplified in four groups of use cases: to investigate the roles of low-level visual
+            features, faces, signs and text, and people of different sizes, in recall of encoded scenes. The plots from
+            these examples corroborate the finding that the algorithm aligns recall fixations with the most likely important
+            regions in the images. Examples also illustrate how the algorithm can differentiate between image objects that
+            have been fixated during silent recall vs those objects that have not been visually attended, even though they
+            were fixated during encoding.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="../imgs/brm2021.png" class="featurette-image img-responsive center-block"></img>
+        </div>
+    </div>
+    <br>
+    <p> Download File "A consensus-based elastic matching algorithm for mapping recall fixations onto encoding fixations in the
+        looking-at-nothing paradigm"<br/>
+        <a href="https://link.springer.com/article/10.3758/s13428-020-01513-1"><span style="text-transform: uppercase;">[PDF]</span></a>
+    </p>
+
+
+    <h2 class="lead">Reference</h2>
+    <p> Wang, X., Holmqvist, K. & Alexa, M. A consensus-based elastic matching algorithm for mapping recall fixations onto encoding fixations in the looking-at-nothing paradigm.
+        Behav Res (2021). https://doi.org/10.3758/s13428-020-01513-1</p>
+
+    <div class="page-header">
+        <p><a class="btn btn-default" href="em.html" role="button">View details &raquo;</a></p>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

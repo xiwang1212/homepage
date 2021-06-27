@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Mental Imagery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../project_saliency/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    <link href="../project_saliency/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="../project_saliency/css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61168812-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mental Imagery</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Retrieval</a></li>
+                <li><a href="similarity.html">Quantification</a></li>
+                <li><a href="em.html">Elastic Matching</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h2>I Can See What You Think <small>The Mental Image Revealed by Gaze Tracking</small></h2>
+        <h5>CHI 2019</h5>
+        <div class="author">
+            <a href="https://xiwang1212.github.io/homepage/">Xi Wang,</a>
+            <a href="http://www.cg.tu-berlin.de/team/sebastian-koch/">Sebastian Koch</a>
+            <a href="http://www.cg.tu-berlin.de"> <small>(Computer Graphics, TU Berlin)</small></a>
+            <a href="https://www.cv.tu-berlin.de/menue/mitarbeiter/andreas_ley/">&nbsp&nbsp&nbsp&nbsp Andreas Ley</a>
+            <a href="http://www.cv.tu-berlin.de"><small>(Computer Vision and Remote Sensing, TU Berlin)</small></a>
+            <a href="http://www.davidlindlbauer.com/">&nbsp&nbsp&nbsp&nbsp David Lindlbauer</a>
+            <a href="https://ait.ethz.ch/"><small>(Advanced Interactive Technologies, ETH Zurich)</small></a>
+        </div>
+        <div>
+            <a href="https://www.cc.gatech.edu/~hays/">James Hays</a>
+            <a href="https://www.ic.gatech.edu/"><small>(Georgia Institute of Technology)</small></a>
+            <a href="https://www.researchgate.net/profile/Kenneth_Holmqvist">&nbsp&nbsp&nbsp&nbsp Kenneth Holmqvist</a>
+            <a href="http://www.cognition.tu-berlin.de/menue/modelling_of_cognitive_processes/"><small>(Universitaet Regensburg)</small></a>
+            <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">&nbsp&nbsp&nbsp&nbsp Marc Alexa</a>
+            <a href="http://www.cg.tu-berlin.de"><small>(Computer Graphics, TU Berlin)</small></a>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <br>
+
+    <div class="row featurette">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <p style="text-align:center;">
+                <font size="5"> When people mentally <b>imagine</b> a photograph, their eyes move as if they were actually looking at that photo.
+                We record eye movements while a photo is recalled from memory and introduce algorithms that can determine <i>which photo</i> is being imagined.
+                </font>
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <img src="../imgs/chi19.png" class="featurette-image img-responsive center-block"></img>
+
+    <br>
+    <hr>
+
+    <h3 class="featurette-heading">Abstract</h3>
+        <p>
+            Humans involuntarily move their eyes when retrieving an image from memory. This motion is often similar to actually observing the image.
+            We suggest to exploit this behavior as a new modality in human computer interaction, using the motion of the eyes as a descriptor of the image.
+            Interaction requires the user's eyes to be tracked but no voluntary physical activity.
+            We perform a controlled experiment and develop matching techniques using machine learning to investigate if images can be discriminated based on the gaze patterns recorded while users merely think about image.
+            Our results indicate that image retrieval is possible with an accuracy significantly above chance.
+            We also show that this result generalizes to images not used during training of the classifier and extends to uncontrolled settings in a realistic scenario.
+        </p>
+    <br>
+<!--
+    <p> Download File "The Mental Image Revealed by Gaze Tracking"<br/>
+        <a href="../files/mi.pdf"><span style="text-transform: uppercase;">[pdf, 5.5 MB]</span></a>
+    </p>
+-->
+    <a href="../files/papers/mi.pdf"><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="imgs/mi.png" width=280></a>
+    <h4> <a href="../files/papers/mi.pdf"><span style="text-transform: uppercase;">[pdf, 5.5 MB]</span></a></h4>
+    <p>The Mental Image Revealed by Gaze Tracking<br>
+        <p style="font-size:11px">
+        @inproceedings{Wang:2019,<br>
+        &nbsp;author = {Wang, Xi and Ley, Andreas and Koch, Sebastian and Lindlbauer, David and Hays, James and Holmqvist, Kenneth and Alexa, Marc},<br>
+        &nbsp;title = {The Mental Image Revealed by Gaze Tracking},<br>
+        &nbsp;booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},<br>
+        &nbsp;series = {CHI '19},<br>
+        &nbsp;year = {2019},<br>
+        &nbsp;isbn = {978-1-4503-5970-2},<br>
+        &nbsp;location = {Glassgow, Scotland UK},<br>
+        &nbsp;pages = {609:1--609:12},<br>
+        &nbsp;articleno = {609},<br>
+        &nbsp;numpages = {12},<br>
+        &nbsp;url = {https://doi.org/10.1145/3290605.3300839},<br>
+        &nbsp;doi = {10.1145/3290605.3300839},<br>
+        &nbsp;acmid = {3300839},<br>
+        &nbsp;publisher = {ACM},<br>
+        &nbsp;address = {New York, NY, USA}<br>
+        }
+        </p>
+    </p>
+
+    <hr>
+
+    <h4><a href="files/talk_chi19.pptx">Slides [54 MB]</a> of talk at CHI'19</h4>
+
+
+    <div>
+        <h3>Dataset</h3>
+        <ul>
+            <li><h4>Image stimuli<small><a href="http://cybertron.cg.tu-berlin.de/xiwang/mental_imagery/dataset/images.zip"> [12 MB zipped]</a></small></h4></li>
+            <li><h4>Raw samples<small><a href="http://cybertron.cg.tu-berlin.de/xiwang/mental_imagery/dataset/raw_samples.zip"> [158 MB zipped]</a></small></h4></li>
+            <li><h4>Eye movement events<small><a href="http://cybertron.cg.tu-berlin.de/xiwang/mental_imagery/dataset/eye_movement_events.zip"> [1.6 MB zipped]</a></small></h4></li>
+        </ul>
+
+    </div>
+    <div>
+        <h3>Source code</h3>
+        <ul>
+            <li><h4><a href="https://github.com/x-wang/mir"> GitHub</a></h4></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h3>Video Preview</h3>
+    <div align="center" class="embed-responsive embed-responsive-16by9" >
+        <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/a7dBY_EZEUQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <div align="center" class="embed-responsive embed-responsive-16by9" >
+        <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/4yH9Tes6sQo" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <div>
+        <h3>Press articles</h3>
+        <br>
+        <p>
+            <a href="https://shiropen.com/seamless/the-mental-image-revealed-by-gaze-tracking"><img src="imgs/seamless.jpg" width="60", height=60"></img></a>
+            <a href="https://www.pressestelle.tu-berlin.de/menue/tub_medien/publikationen/medieninformationen/2019/februar_2019/medieninformation_nr_302019/"><img src="imgs/TU_Logo.png" width="80", height=60"></img></a>
+            <a href="http://ml.gatech.edu/hg/item/620364"><img src="imgs/georgia_tech_ml.jpg" width="230", height=50"></img></a>
+        </p>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Acknowledgments</h3>
+        <p>We would like to thank Minjung Kim for narrating the video and all participants for joining our experiment.
+        </p>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
