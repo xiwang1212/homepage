@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Toward Quantifying Visual Indeterminacy</title>
+    <meta property="og:image" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/files/teaser-02.jpg"/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+<!--    <meta name="twitter:site" content="@nytimesbits" />-->
+    <meta name="twitter:creator" content="@AaronHertzmann" />
+    <meta property="og:url" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/" />
+    <meta property="og:title" content="Toward Quantifying Visual Indeterminacy" />
+
+    <meta property="og:description" content="This paper presents a crowdsourced approach to measuring the perceptual ambiguity of a collection of artistic images." />
+    <meta property="og:image" content="http://cybertron.cg.tu-berlin.de/xiwang/tap-project-page/files/teaser-02.jpg" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="./css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61168812-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Visual Indeterminacy</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#Abstract">Abstract</a></li>
+                <li class="active"><a href="#Paper">Paper</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+
+        <h2>A computational approach to studying aesthetic judgments of ambiguous artworks</h2>
+        <h5>Psychology of Aesthetics, Creativity and the Arts, 2023</h5>
+        <div class="author">
+            <a href="http://cybertron.cg.tu-berlin.de/xiwang/"><font size="4">Xi Wang</font></a>
+            <small>ETH Zurich</small>
+            <br>
+            <a href="https://research.adobe.com/person/zoya-bylinskii/"><font size="4">Zoya Bylinskii</font>,</a>
+            <small>Adobe Research</small>
+            <br>
+            <a href="http://www.dgp.toronto.edu/~hertzman/"><font size="4">Aaron Hertzmann</font></a>
+            <small>Adobe Research</small>
+            <br>
+            <a href="https://robertpepperell.com/"><font size="4">Robert Pepperell</font></a>
+            <small>Fovolab/Cardiff Metropolitan University</small>
+
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <br>
+    <br>
+
+<!--    <img src="./files/teaser-01.png" class="featurette-image img-responsive center-block" width=1000></img>-->
+<!--    <img src="../imgs/paca.png" class="featurette-image img-responsive center-block" width=1000></img>-->
+
+    <br>
+
+    <h3 class="featurette-heading", id="Abstract">Abstract</h3>
+        <p>
+            Visual ambiguity plays a key role in the perceptual experience of art and has been much exploited by modernist and contemporary artists for aesthetic effects. But it remains unclear how aesthetic judgments are affected by visual ambiguity, and the subjective nature of aesthetic experience makes it difficult to measure. Wang et al. (2020) piloted a methodology in which a large collection of free-form textual descriptions of artworks were gathered from participants. The variability of these descriptions was then quantified computationally with Shannon entropy; ambiguous images tended to generate a greater number and wider diversity of descriptive terms. In the present study, we evaluated how well these measures can predict aesthetic preference for ambiguous images.
+            We designed three crowdsourcing tasks in order to measure aesthetic preferences.
+            The first was a simple rating task, and the other two required the participants to engage more actively with the images.
+            We hypothesized that the number of associations evoked by ambiguous works of art, when computationally measured by entropy and description lengths, is a factor in judgments of their aesthetic value.
+            Following this hypothesis, we made and tested a number of predictions.
+            Our results provide broad support for the hypothesis, but with some interesting caveats and exceptions.
+            We find that the form of the task significantly affects preference ratings and that participants’ responses can be clustered into two categories: those that prefer simple, recognizable imagery, and those that prefer more complex, ambiguous imagery. When taking this clustering into account, we find that our measures of entropy are correlated with aesthetic ratings. We conclude that these computational methods are useful for investigating the variable subjective responses to ambiguous artworks.
+        </p>
+    <br>
+    <hr>
+    <div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

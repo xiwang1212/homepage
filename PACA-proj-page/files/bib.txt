@@ -1,0 +1,18 @@
+@article{,
+author = {Wang, Xi and Bylinskii, Zoya and Hertzmann, Aaron and Pepperell, Robert},
+title = {A computational approach to studying aesthetic judgments of ambiguous artworks},
+year = {2023},
+issue_date = {2023},
+publisher = {},
+address = {},
+volume = {},
+number = {},
+issn = {},
+url = {},
+doi = {},
+journal = {Psychology of Aesthetics, Creativity and the Arts},
+month = {},
+articleno = {},
+numpages = {},
+keywords = {}
+}
